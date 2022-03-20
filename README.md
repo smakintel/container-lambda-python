@@ -3,7 +3,7 @@ Example Project on how to develop RESTful API with Flask and Python
 
 
 # Kava notes
-## create virtual env in ubuntu
+## create virtual env in ubuntu (my dev env python version is 3.8)
 cd to project directory
 
 python3 -m venv .
