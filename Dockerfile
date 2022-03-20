@@ -1,11 +1,14 @@
-FROM python:3.7
+FROM public.ecr.aws/lambda/python:3.8
 
-WORKDIR /opt/app
+# Copy function code
 
-COPY . .
+COPY app.py ${LAMBDA_TASK_ROOT}
 
-RUN pip install --no-cache-dir -r requirements-prod.txt
+# Install the function's dependencies using file requirements.txt
+# from your project folder.
 
-EXPOSE 5000
+COPY requirements.txt  .
+RUN  pip3 install -r requirements.txt --target "${LAMBDA_TASK_ROOT}"
 
-CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0"]
+# Set the CMD to your handler (could also be done as a parameter override outside of the Dockerfile)
+CMD [ "app.lambda_handler" ]

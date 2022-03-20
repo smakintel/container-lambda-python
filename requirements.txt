@@ -1,2 +1,3 @@
-flask
+aws-wsgi
 python-dotenv
+flask
