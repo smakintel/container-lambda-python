@@ -66,4 +66,7 @@ docker push 968262565012.dkr.ecr.ap-southeast-1.amazonaws.com/rest-api:v2
 
 
 # API Gateway end point
+## path=/   (as defined in app.py)
+https://<################>.execute-api.ap-southeast-1.amazonaws.com/test
+## path=/kava/test (as defined in app.py)
 https://<################>.execute-api.ap-southeast-1.amazonaws.com/test/kava/test
