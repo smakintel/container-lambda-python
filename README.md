@@ -63,3 +63,7 @@ docker push 968262565012.dkr.ecr.ap-southeast-1.amazonaws.com/rest-api:v2
     "postcode": "12345"
   }
 }
+
+
+# API Gateway end point
+https://<################>.execute-api.ap-southeast-1.amazonaws.com/test/kava/test
