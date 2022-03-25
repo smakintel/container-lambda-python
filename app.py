@@ -20,7 +20,7 @@ def index():
 
 
 @app.route('/register')
-def register():
+def register(event):
     ddbClient = boto3.resource('dynamodb', region_name='ap-southeast-1')
     table = ddbClient.Table('maiderp_academy_users')
 

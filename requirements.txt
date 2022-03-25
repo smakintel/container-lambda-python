@@ -2,5 +2,3 @@ aws-wsgi
 python-dotenv
 flask
 boto3
-pprint
-json
